@@ -1,10 +1,10 @@
-import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
 export const HomePageCategories = () => {
   return (
     <section className="p-4 flex items-center justify-start flex-wrap ">
-      <Card className="w-full h-[200px] md:w-[320px] md:h-[250px] bg-transparent border-none hover:border hover:border-emerald-400 flex flex-col cursor-pointer space-y-2 overflow-auto group ">
+      <Card className="w-full h-[200px] md:w-[320px] md:h-[250px] bg-transparent border border-transparent hover:border hover:border-emerald-400 flex flex-col cursor-pointer space-y-2 overflow-auto group ">
         <CardHeader className="flex-1 relative p-0 w-full">
           <Image
             src="/images/1.jpeg"
