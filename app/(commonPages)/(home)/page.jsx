@@ -1,4 +1,4 @@
-import { HomeCarousel } from "./_components";
+import { HomeCarousel, HomePageCategories } from "./_components";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       {/* Carosal */}
       <HomeCarousel />
       {/* Categories/gender based */}
-
+      <HomePageCategories />
       {/* explore best sellers */}
     </main>
   );

@@ -13,17 +13,17 @@ import Image from "next/image";
 
 export const HomeCarousel = () => {
   return (
-    <section className="w-full h-64 md:h-72">
+    <section className="w-full h-64 md:h-96">
       <Carousel
         opts={{
           align: "start",
           loop: true,
         }}
-        // plugins={[
-        //   Autoplay({
-        //     delay: 2000,
-        //   }),
-        // ]}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
       >
         <CarouselContent>
           <CarouselItem className="h-full min-h-60 flex flex-col items-center justify-center relative md:min-h-96">
