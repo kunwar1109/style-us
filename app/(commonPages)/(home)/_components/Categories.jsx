@@ -45,7 +45,7 @@ export const HomePageCategories = async () => {
 HomePageCategories.Skeleton = function HomePageCategoriesSkeleton() {
   return (
     <section className="p-8">
-      <Skeleton className="bg-slate-300/40 h-8 w-56 mx-auto mb-8"></Skeleton>
+      <Skeleton className="bg-slate-300/40 h-8 w-72 mx-auto mb-8"></Skeleton>
       <div className="flex flex-col md:flex-row items-center justify-center gap-y-8 md:gap-x-8 md:flex-wrap">
         <Skeleton className="aspect-video w-full h-[200px] md:w-[320px] md:h-[250px] bg-slate-300/40"></Skeleton>
         <Skeleton className="aspect-video w-full h-[200px] md:w-[320px] md:h-[250px] bg-slate-300/40"></Skeleton>
