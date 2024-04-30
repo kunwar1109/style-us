@@ -5,7 +5,11 @@ import Image from "next/image";
 
 export const HomePageCategories = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
-  const categories = await db.category.findMany({});
+  const categories = await db.category.findMany({
+    orderBy: {
+      createdAt: "asc",
+    },
+  });
 
   return (
     <section className="p-8">
