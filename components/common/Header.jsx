@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-slate-800 h-20 flex items-center justify-between px-8 z-10">
+    <nav className="sticky top-0 left-0 w-full bg-slate-800 h-20 flex items-center justify-between px-8 z-10">
       {/* LOGO */}
       <h1 className="text-2xl text-fuchsia-50 cursor-pointer">
         Style<span className="text-emerald-400">US</span>
