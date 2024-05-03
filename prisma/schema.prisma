@@ -21,3 +21,17 @@ model Category {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+model SubCategory {
+  id   String            @id @default(uuid())
+  name String
+  type SubCategoryType[]
+}
+
+model SubCategoryType {
+  id       String      @id @default(uuid())
+  name     String      @db.Text
+  image    String      @db.Text
+  subCatId String      @db.Text
+  subCat   SubCategory @relation(fields: [subCatId], references: [id])
+}

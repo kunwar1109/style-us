@@ -4,8 +4,7 @@ export default function CommanPagesLayout({ children }) {
   return (
     <div className="h-full bg-slate-700">
       <Header />
-      <main className="">{children}</main>
-      <Footer />
+      <main>{children}</main>
     </div>
   );
 }
